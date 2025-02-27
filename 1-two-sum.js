@@ -1,7 +1,7 @@
 /* 
 // Brute Force Approch (O(n²))
 
-function twoSums(nums) {
+function twoSum(nums) {
     for(let i = 0; i < nums.length - 1; i++) {
         for(let j = i + 1; j < nums.length; j++) {
             if(nums[i] + nums[j] === target) {
@@ -15,7 +15,7 @@ function twoSums(nums) {
 
 // Optimized Approch (O(n))
 
-function twoSums(nums, target) {
+function twoSum(nums, target) {
     let map = new Map();
     for(let i = 0; i < nums.length; i++) {
         let complement = target - nums[i];
@@ -29,4 +29,4 @@ function twoSums(nums, target) {
 
 let nums = [2, 7, 11, 15];
 target = 9;
-console.log(twoSums(nums, target));
+console.log(twoSum(nums, target));
