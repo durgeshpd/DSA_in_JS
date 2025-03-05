@@ -10,7 +10,7 @@ function majorityElement(nums) {
         } else {
             map.set(num, 1);
         }
-        // this one also return as map.set(num, (map.get(num) || 0) + 1);
+        // this one also write as map.set(num, (map.get(num) || 0) + 1);
         if (map.get(num) > nums.length / 2) return num;
     }
 
