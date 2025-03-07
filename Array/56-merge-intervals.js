@@ -1,4 +1,3 @@
-
 // Optimize Approch (O(n))
 
 function merge(intervals) {
